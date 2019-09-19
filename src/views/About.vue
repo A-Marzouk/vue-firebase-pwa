@@ -1,9 +1,13 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1 class="mb-4">About my project : [Firestore database] </h1>
 
     <div v-for="(doc,index) in currentDocs" :key="index">
-      ID: {{doc.id}} , DATA : {{doc.data()}}
+      ID: {{doc.id}} , <br/>
+      DATA : <br/>
+      Title : {{doc.data().title}}<br/>
+      Description : {{doc.data().description}}<br/>
+      website : {{doc.data().website}}
     </div>
 
   </div>
