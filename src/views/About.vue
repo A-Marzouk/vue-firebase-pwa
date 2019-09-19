@@ -10,13 +10,13 @@
 </template>
 
 <script>
-  import  db from '../database'
+  import  db from '../database' ;
 
   export default {
     data(){
       return{
         currentDocs : []
-      }
+      };
     },
     mounted() {
       db.collection('projects').get().then( (snapshot) => {
