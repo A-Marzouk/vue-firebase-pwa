@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <v-toolbar app>
+        <v-app-bar>
             <v-app-bar-nav-icon class="grey lighten-5" @click="drawer = !drawer"  v-if="!drawer"></v-app-bar-nav-icon>
             <v-btn icon v-if="drawer"  class="grey lighten-5" @click="drawer = !drawer">
                 <v-icon>mdi-arrow-left</v-icon>
@@ -14,7 +14,7 @@
                 Contact
                 <v-icon right>mdi-phone</v-icon>
             </v-btn>
-        </v-toolbar>
+        </v-app-bar>
 
         <v-navigation-drawer  v-model="drawer" app class="grey lighten-3">
             <NavList></NavList>
